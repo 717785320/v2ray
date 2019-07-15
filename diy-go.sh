@@ -9,8 +9,8 @@
 # 2: Application error
 # 3: Network error
 
-CUR_VER="v4.20.0"
-NEW_VER="v4.20.0"
+CUR_VER=""
+NEW_VER=""
 ARCH=""
 VDIS="64"
 ZIPFILE="/tmp/v2ray/v2ray.zip"
@@ -210,7 +210,7 @@ getVersion(){
         if [[ ${CUR_VER} != v* ]]; then
             CUR_VER=v${CUR_VER}
         fi
-        TAG_URL="https://api.github.com/repos/v2ray/v2ray-core/releases/latest2"
+        TAG_URL="https://raw.githubusercontent.com/717785320/v2ray/master/latest.json"
         NEW_VER=`curl ${PROXY} -s ${TAG_URL} --connect-timeout 10| grep 'tag_name' | cut -d\" -f4`
         if [[ ${NEW_VER} != v* ]]; then
           NEW_VER=v${NEW_VER}
