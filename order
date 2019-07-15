@@ -1,6 +1,6 @@
 使用 root 用户输入下面命令安装或卸载
 
-bash <(curl -s -L https://raw.githubusercontent.com/717785320/v2ray/master/install.sh)
+bash <(curl -L -s https://raw.githubusercontent.com/717785320/v2ray/master/diy-go.sh)
 
 如果提示 curl: command not found ，那是因为你的 VPS 没装 Curl
 
@@ -11,3 +11,19 @@ centos 系统安装 Curl 方法: yum update -y && yum install curl -y
 安装好 curl 之后就能安装脚本了
 
 备注：安装完成后，输入 v2ray 即可管理 V2Ray
+
+BBR-Plus加速
+wget "https://github.com/chiakge/Linux-NetSpeed/raw/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+
+部分如果提示连接不上github。可以先安装
+yum install net-tools -y  或者 apt-get install net-tools -y
+
+如果没有wget，比如搬瓦工vps，可以先安装wget
+
+yum -y install wget
+执行如何提示证书错误的话
+
+yum -y install ca-certificates
+或者
+
+apt-get -y install ca-certificates
