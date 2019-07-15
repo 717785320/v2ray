@@ -9,8 +9,8 @@
 # 2: Application error
 # 3: Network error
 
-CUR_VER=""
-NEW_VER=""
+CUR_VER="v4.20.0"
+NEW_VER="v4.20.0"
 ARCH=""
 VDIS="64"
 ZIPFILE="/tmp/v2ray/v2ray.zip"
@@ -126,7 +126,7 @@ downloadV2Ray(){
     if [[ "${DIST_SRC}" == "jsdelivr" ]]; then
         DOWNLOAD_LINK="https://cdn.jsdelivr.net/gh/v2ray/dist/v2ray-linux-${VDIS}.zip"
     else
-        DOWNLOAD_LINK="https://github.com/717785320/v2ray/releases/download/v4.20.0/v2ray-linux-${VDIS}.zip"
+        DOWNLOAD_LINK="https://github.com/717785320/v2ray/releases/download/${NEW_VER}/v2ray-linux-${VDIS}.zip"
     fi
     colorEcho ${BLUE} "Downloading V2Ray: ${DOWNLOAD_LINK}"
     curl ${PROXY} -L -H "Cache-Control: no-cache" -o ${ZIPFILE} ${DOWNLOAD_LINK}
