@@ -1,6 +1,8 @@
 使用 root 用户输入下面命令安装或卸载
 
-bash <(curl -L -s https://raw.githubusercontent.com/717785320/v2ray/master/diy-go.sh)
+官方:bash <(curl -L -s https://install.direct/go.sh)
+
+自改:bash <(curl -L -s https://raw.githubusercontent.com/717785320/v2ray/master/diy-go.sh)
 
 如果提示 curl: command not found ，那是因为你的 VPS 没装 Curl
 
