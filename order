@@ -29,3 +29,9 @@ yum -y install ca-certificates
 或者
 
 apt-get -y install ca-certificates
+
+CentOS系统:
+yum install wget -y
+
+Debian/Ubuntu系统，需要执行以下命令：
+apt-get install -y wget
