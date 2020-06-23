@@ -21,7 +21,7 @@ wget "https://github.com/chiakge/Linux-NetSpeed/raw/master/tcp.sh" && chmod +x t
 yum install net-tools -y  或者 apt-get install net-tools -y
 
 如果没有wget，比如搬瓦工vps，可以先安装wget
-
+apt-get install wget
 yum -y install wget
 执行如何提示证书错误的话
 
